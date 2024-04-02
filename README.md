@@ -55,6 +55,7 @@ Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan 
 ###### Gambar 1a. Analisis Univariat (Data Kategori)
 ![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/eeda9de4-f334-4644-b238-bbf6ad50f730)
 
+
 ##### Gambar 1b. Analisis Univariat (Data Numerik)
 Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'Type_of_vehicle' memiliki perbandingan jumlah yang tidak sama, untuk nilai data 'motorcycle' dengan persentase 57.4% sedangkan nilai data 'bicycle' memiliki persentasi 0.1%. Lebih jauh, pada Gambar 1b, untuk data numerik memiliki karakteristik, yaitu:
 * Data Delivery_person_Age paling banyak memesan memiliki usia 27.5 tahun. Akan tetapi, hampir semua variabel memiliki jumlah data yang sama kecuali pada usia 27.5 tahun
@@ -62,5 +63,14 @@ Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'Type
 * koordinat restaurant latitude restorant mayoritas berada pada 10 - 25  derajat dan koordinat longitude restaurant mayoritas berada 0-82 derajat.
 * koordinat location latitude lokasi pengiriman  mayoritas berada pada 10 - 30  derajat dan koordinat longitude lokasi pengiriman mayoritas berada 0-82 derajat.
 * distribusi Time_taken(min) value miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
+
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/d63dbf70-f2a5-4842-9e66-b75f0f557aef)
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/8fc7f7f7-a673-4a45-a1f2-12f93724b03f)
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/ebffb84d-681b-4d01-8a3b-3807c359583b)
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/207da6ed-66ca-45e8-9c52-dcb6aec2e3f7)
+
+
 ##### Gambar 2a. Analisis Multivariat (Data Kategori)
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/f6daf11f-324d-47fc-8690-8e7728768a46)
+##### Gambar 2b. Analisis Multivariat (Data Numerik)
 
