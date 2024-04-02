@@ -55,6 +55,7 @@ Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan 
 ![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/1b682194-aaec-43c5-9f74-85d49e7923d3)
 ###### Gambar 1a. Analisis Univariat (Data Kategori)
 
-
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/2daf895d-4af6-41d8-921a-b418a88f45cb)
+##### Gambar 1b. Analisis Univariat (Data Numerik)
 
 
