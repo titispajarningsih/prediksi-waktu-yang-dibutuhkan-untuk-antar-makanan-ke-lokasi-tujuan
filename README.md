@@ -204,7 +204,7 @@ Secara lebih jauh perbandingan Model 1, 2, 3, dan 4 bisa dilihat pada Gambar 4 b
 ![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/d735e334-05b3-4248-9557-a131c5351d35)
 
 
-Gambar 4. Perbandingan Model berdasarkan Nilai Error (dalam 1e6)
+##### Gambar 4. Perbandingan Model berdasarkan Nilai Error (dalam 1e6)
 
 Berdasarkan Gambar 4 dapat terlihat bahwa nilai error train dan test dari Model 3 (RF1) dan Model 4 (RF2) jauh lebih baik dibandingkan model lainnya.
 
