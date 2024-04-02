@@ -77,7 +77,7 @@ Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'Type
 
 ##### Gambar 2c. Analisis Multivariat (Correlation Matrix)
 
-Pada Gambar 2a tampak persebaran data 'ocean proximity' terhadap 'median house value'. Dengan mengamati rata-rata 'median_house_value' relatif terhadap fitur kategori di atas, diperoleh insight sebagai berikut:
+Pada Gambar 2a tampak persebaran data 'kategorik' terhadap 'Time_taken(min)'. Dengan mengamati rata-rata 'Time_taken(min) relatif terhadap fitur kategori di atas, diperoleh insight sebagai berikut:
 
 Pada fitur 'data kategorik', rata-rata 'Time_taken(min)' cenderung bervariasi.
 Nilai 'Time_taken(min)' terhadap ID dan Delivery_person_ID memiliki rentang variasi 10 - 50. 
