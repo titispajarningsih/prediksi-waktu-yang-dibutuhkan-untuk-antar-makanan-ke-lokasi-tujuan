@@ -28,10 +28,10 @@ Peningkatan model prediksi waktu yang diperlukan untuk mengantar makanan memilik
 * Untuk mendapatkan model yang diinginkan menggunakan performa data numerik.
   
 ## DATA UNDERSTANDING
-Dataset berupa CSV
-Dataset terdiri dari 45.593 records dengan 11 buah fitur yang diukur.
-Dataset terdiri dari 4 data kategori dan 7 data numerik.
-Dataset memiliki missing value sejumlah 3639 records
+* Dataset berupa CSV
+* Dataset terdiri dari 45.593 records dengan 11 buah fitur yang diukur.
+* Dataset terdiri dari 4 data kategori dan 7 data numerik.
+* Dataset memiliki missing value sejumlah 0 records.
 ## VARIABEL-VARIABEL PADA DATASET SEBAGAI BERIKUT
 * ID                         : Merupakan serangkaian huruf yang merupakan tanda pengenal seseorang.
 * Delivery_person_ID         : Merupakan identifikasi unik pengirim produk dalam sebuah sistem.
@@ -86,7 +86,7 @@ Kesimpulan akhir, fitur kategori 'Type_of_vehicle' memiliki pengaruh terhadap fi
 Pada Gambar 2b, dengan menggunakan fungsi pairplot dari library seaborn, tampak terlihat relasi pasangan dalam dataset. Dari gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot, terlihat bahwa 'Delivery_person_Age' memiliki korelasi yang rendah dengan fitur 'Time_taken(min)'. Sedangkan kedua fitur lainnya terlihat memiliki korelasi yang lebih rendah karena sebarannya tidak membentuk pola.
 
 Terakhir, Gambar 2c merupakan Correlation Matrix menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur 'Delivery_person_Age' memiliki skor korelasi yang sebesar (0.28) dengan fitur target 'Time_taken(min)'. Artinya, fitur 'Time_taken(min)' berkorelasi cukup rendah dengan keempat fitur tersebut. Sementara itu, fitur lainnya memiliki korelasi negatif sehingga fitur tersebut dapat dieliminasi.
-# Data Preparation
+## Data Preparation
 Pada proses *Data Preparation* dilakukan kegiatan seperti *Data Gathering*, *Data Assessing*, dan *Data Cleaning*.
 Pada proses *Data Gathering*, data diimpor sedemikian rupa agar bisa dibaca dengan baik menggunakan *datafram*e Pandas.
 Untuk proses *Data Assessing*, berikut adalah beberapa pengecekan yang dilakukan:
