@@ -33,17 +33,17 @@ Dataset terdiri dari 45.593 records dengan 11 buah fitur yang diukur.
 Dataset terdiri dari 4 data kategori dan 7 data numerik.
 Dataset memiliki missing value sejumlah 3639 records
 ## VARIABEL-VARIABEL PADA DATASET SEBAGAI BERIKUT
-ID                         : Merupakan serangkaian huruf yang merupakan tanda pengenal seseorang.
-Delivery_person_ID         : Merupakan identifikasi unik pengirim produk dalam sebuah sistem.
-Delivery_person_age        : Merupakan identfikasi usia pengirim produk.
-Delivery_person_Ratings    : Merupakan peringkat pengirim produk.
-Restaurant_latitude        : Koordinat geografis Restaurant yang digunakan untuk menunjukkan posisi suatu titik dari arah timur ke barat yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
+* ID                         : Merupakan serangkaian huruf yang merupakan tanda pengenal seseorang.
+* Delivery_person_ID         : Merupakan identifikasi unik pengirim produk dalam sebuah sistem.
+* Delivery_person_age        : Merupakan identfikasi usia pengirim produk.
+* Delivery_person_Ratings    : Merupakan peringkat pengirim produk.
+* Restaurant_latitude        : Koordinat geografis Restaurant yang digunakan untuk menunjukkan posisi suatu titik dari arah timur ke barat yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
 Restaurant_longitude        : Koordinat geografis Restaurant yang digunakan untuk menunjukkan posisi suatu titik dari arah utara ke selatan yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
-Delivery_location_Latitude  : Koordinat geografis lokasi pengiriman yang digunakan untuk menunjukkan posisi suatu titik dari arah timur ke barat yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
-Delivery_location_Latitude  : Koordinat geografis lokasi pengirimanyang digunakan untuk menunjukkan posisi suatu titik dari arah utara ke selatan yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
-Type_of_order               : Tipe produk yang dikirim
-Type_of_vehicle             : Tipe kendaraan roda dua yang digunakan
-Time_Taken(min)             : Lamanya waktu pengiriman            
+* Delivery_location_Latitude  : Koordinat geografis lokasi pengiriman yang digunakan untuk menunjukkan posisi suatu titik dari arah timur ke barat yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
+* Delivery_location_Latitude  : Koordinat geografis lokasi pengirimanyang digunakan untuk menunjukkan posisi suatu titik dari arah utara ke selatan yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
+* Type_of_order               : Tipe produk yang dikirim
+* Type_of_vehicle             : Tipe kendaraan roda dua yang digunakan
+* Time_Taken(min)             : Lamanya waktu pengiriman            
 
 Analisis Univariat merupakan bentuk analisis data yang hanya merepresentasikan informasi yang terdapat pada satu variabel. Jenis visualisasi ini umumnya digunakan untuk memberikan gambaran terkait distribusi sebuah variabel dalam suatu dataset. Sedangkan, Analisis Multivariat tmerupakan jenis analisis data yang terdapat dalam lebih dari dua variabel. Jenis visualisasi ini digunakan untuk merepresentasikan hubungan dan pola yang terdapat dalam multidimensional data.
 Selain melalui analisis, dilakukan juga Visualisasi Data. Memvisualisasikan data memberikan wawasan mendalam tentang perilaku berbagai fitur-fitur yang tersedia dalam dataset. Teknik visualisasi yang digunakan pada pembuatan model proyek ini adalah dengan menggunakan catplot yang digunakan untuk memplot distribusi data pada data kategori, pairplot yang digunakan untuk melakukan hubungan antar fitur dalam dataset, dan heatmap yang menampilkan korelasi antar fitur yang ada dalam dataset dalam bentuk matriks.
