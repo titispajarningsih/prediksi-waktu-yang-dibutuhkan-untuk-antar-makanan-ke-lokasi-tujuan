@@ -86,3 +86,38 @@ Kesimpulan akhir, fitur kategori 'Type_of_vehicle' memiliki pengaruh terhadap fi
 Pada Gambar 2b, dengan menggunakan fungsi pairplot dari library seaborn, tampak terlihat relasi pasangan dalam dataset. Dari gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot, terlihat bahwa 'Delivery_person_Age' memiliki korelasi yang rendah dengan fitur 'Time_taken(min)'. Sedangkan kedua fitur lainnya terlihat memiliki korelasi yang lebih rendah karena sebarannya tidak membentuk pola.
 
 Terakhir, Gambar 2c merupakan Correlation Matrix menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur 'Delivery_person_Age' memiliki skor korelasi yang sebesar (0.28) dengan fitur target 'Time_taken(min)'. Artinya, fitur 'Time_taken(min)' berkorelasi cukup rendah dengan keempat fitur tersebut. Sementara itu, fitur lainnya memiliki korelasi negatif sehingga fitur tersebut dapat dieliminasi.
+# Data Preparation
+Pada proses *Data Preparation* dilakukan kegiatan seperti *Data Gathering*, *Data Assessing*, dan *Data Cleaning*.
+Pada proses *Data Gathering*, data diimpor sedemikian rupa agar bisa dibaca dengan baik menggunakan *datafram*e Pandas.
+Untuk proses *Data Assessing*, berikut adalah beberapa pengecekan yang dilakukan:
+- Duplicate data (data yang serupa dengan data lainnya)
+- Missing value (data atau informasi yang "hilang" atau tidak tersedia)
+- Outlier (data yang menyimpang dari rata-rata sekumpulan data yang ada)
+ 
+Pada proses *Data Cleaning*, secara garis besar, terdapat tiga metode yang dapat digunakan antara lain seperti berikut:
+- Dropping (metode yang dilakukan dengan cara menghapus sejumlah baris data)
+- Imputation (metode yang dilakukan dengan cara mengganti nilai yang "hilang" atau tidak tersedia dengan nilai tertentu yang bisa berupa median atau mean dari data)
+- Interpolation (metode menghasilkan titik-titik data baru dalam suatu jangkauan dari suatu data)
+
+Pada kasus proyek ini tidak ditemukan data duplikat. Pada proyek ini tidak ditemukan *Missing Value*. Untuk *outlier* sendiri dilakukan metode *dropping* menggunakan metode IQR. IQR sendiri didapatkan dengan cara mengurangi Q3 dengan Q1 sebagaimana rumusan berikut. 
+
+$$ IQR = Q<sub>3</sub> - Q<sub>1</sub> $$
+
+dimana
+Q<sub>1</sub> adalah kuartil pertama dan Q<sub>3</sub> adalah kuartil ketiga.
+
+Dengan menggunakan metode IQR, dapat ditentukan *outlier* melalui suatu nilai batas yang ditentukan. Setelah menggunakan metode IQR dimana *dataset* yang sebelumnya berjumlah 45593 menjadi 33951.
+ 
+Semua proses ini diperlukan dalam rangka membuat model yang baik. 
+
+Untuk mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari “n-dimensional space” ke dalam sistem berkoordinat baru dengan dimensi m, di mana m lebih kecil dari n. Pada proyek ini, fitur 'Delivery_person_Age', 'Restaurant_latitude', 'Delivery_location_latitude' divisualisasikan untuk melihat hubungan di antara fitur-fitur tersebut. seperti yang terlihat pada Gambar 3 berikut.
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/f0788c20-c3e0-401a-888e-3392c85e60e0)
+##### Gambar 3 Visualisasi Hubungan antar Fitur sebelum Reduksi PCA
+Berdasarkan Gambar 3 dapat diketahui yang memiliki hubungan antar fitur hanya dua yaitu 'Restaurant_latitude', 'Delivery_location_latitude'. Selanjutnya, 2 fitur ini dapat direduksi dengan PCA. Sebelum itu, cek proporsi informasi dari kedua komponen PCs tadi.
+
+```
+pca.explained_variance_ratio_.round(2)
+```
+Potongan kode tersebut memberikan keluaran berupa array([1,0]). Berdasarkan hasil ini, yang dipertahankan adalah PC (komponen) pertama saja karena dari output yang dideroleh diketahui bahwa 100% informasi pada kedua fitur 'Restaurant_latitude', 'Delivery_location_latitude' terdapat pada PC pertama. Sedangkan sisanya, sebesar 0% terdapat pada PC kedua dan. PC pertama ini akan menjadi fitur 'delivery_time2' menggantikan ketiga fitur lainnya ('Restaurant_latitude', 'Delivery_location_latitude').
+
+
