@@ -217,6 +217,6 @@ Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rum
 Tabel 2. Perbandingan Model
 
 
-Berdasarkan hasil evaluasi, terlihat bahwa prediksi waktu pengiriman dengan *Random Forest* (RF), baik RF1 (tanpa tuning) ataupun RF2 (dengan tuning) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 341700 dan nilai RF1 dan RF2 masing-masing yaitu 347466.0 dan 315645.2. Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi prediksi waktu pengiriman dengan cukup baik dengan menggunakan *Random Forest Regressor*.
+Berdasarkan hasil evaluasi, terlihat bahwa prediksi waktu pengiriman dengan *Random Forest* (RF), baik RF1 (tanpa tuning) ataupun RF2 (dengan tuning) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 22 dan nilai RF1 dan RF2 masing-masing yaitu 19.7 dan 20.6. Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi prediksi waktu pengiriman dengan cukup baik dengan menggunakan *Random Forest Regressor*.
 
 
