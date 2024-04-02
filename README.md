@@ -50,9 +50,17 @@ Selain melalui analisis, dilakukan juga Visualisasi Data. Memvisualisasikan data
 
 Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan EDA Analisis Univariat dan Gambar 2 merupakan EDA Analisis Multivariat.
 
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/e55f0a82-c6dc-487e-a77b-50370db0a2a0)
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/bc8e0e96-c059-428b-9e2f-abdb1021457a)
 ###### Gambar 1a. Analisis Univariat (Data Kategori)
-
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/eeda9de4-f334-4644-b238-bbf6ad50f730)
 
 ##### Gambar 1b. Analisis Univariat (Data Numerik)
-
+Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'Type_of_vehicle' memiliki perbandingan jumlah yang tidak sama, untuk nilai data 'motorcycle' dengan persentase 57.4% sedangkan nilai data 'bicycle' memiliki persentasi 0.1%. Lebih jauh, pada Gambar 1b, untuk data numerik memiliki karakteristik, yaitu:
+* Data Delivery_person_Age paling banyak memesan memiliki usia 27.5 tahun. Akan tetapi, hampir semua variabel memiliki jumlah data yang sama kecuali pada usia 27.5 tahun
+* Data Delivery_person_Ratings memiliki rentang 4.6 - 5.0.
+* koordinat restaurant latitude restorant mayoritas berada pada 10 - 25  derajat dan koordinat longitude restaurant mayoritas berada 0-82 derajat.
+* koordinat location latitude lokasi pengiriman  mayoritas berada pada 10 - 30  derajat dan koordinat longitude lokasi pengiriman mayoritas berada 0-82 derajat.
+* distribusi Time_taken(min) value miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
+##### Gambar 2a. Analisis Multivariat (Data Kategori)
 
