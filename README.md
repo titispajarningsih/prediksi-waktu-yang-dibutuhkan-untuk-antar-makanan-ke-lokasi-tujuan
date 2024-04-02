@@ -69,8 +69,20 @@ Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'Type
 ![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/ebffb84d-681b-4d01-8a3b-3807c359583b)
 ![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/207da6ed-66ca-45e8-9c52-dcb6aec2e3f7)
 
-
 ##### Gambar 2a. Analisis Multivariat (Data Kategori)
 ![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/f6daf11f-324d-47fc-8690-8e7728768a46)
-##### Gambar 2b. Analisis Multivariat (Data Numerik)
 
+##### Gambar 2b. Analisis Multivariat (Data Numerik)
+![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/cf615677-43ce-42b0-bbc4-d513927c3f2f)
+
+##### Gambar 2c. Analisis Multivariat (Correlation Matrix)
+
+Pada Gambar 2a tampak persebaran data 'ocean proximity' terhadap 'median house value'. Dengan mengamati rata-rata 'median_house_value' relatif terhadap fitur kategori di atas, diperoleh insight sebagai berikut:
+
+Pada fitur 'data kategorik', rata-rata 'Time_taken(min)' cenderung bervariasi.
+Nilai 'Time_taken(min)' terhadap ID dan Delivery_person_ID memiliki rentang variasi 10 - 50. 
+Nilai 'Time_taken(min)' terhadap Type_of_vehicle berada pada nilai 20-30 sedangkan Nilai 'Time_taken(min)' terhadap Type_of_order berada pada nilai 25. 
+Kesimpulan akhir, fitur kategori 'Type_of_vehicle' memiliki pengaruh terhadap fitur numerik 'Time_taken(min)'.
+Pada Gambar 2b, dengan menggunakan fungsi pairplot dari library seaborn, tampak terlihat relasi pasangan dalam dataset. Dari gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot, terlihat bahwa 'Delivery_person_Age' memiliki korelasi yang rendah dengan fitur 'Time_taken(min)'. Sedangkan kedua fitur lainnya terlihat memiliki korelasi yang lebih rendah karena sebarannya tidak membentuk pola.
+
+Terakhir, Gambar 2c merupakan Correlation Matrix menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur 'Delivery_person_Age' memiliki skor korelasi yang sebesar (0.28) dengan fitur target 'Time_taken(min)'. Artinya, fitur 'Time_taken(min)' berkorelasi cukup rendah dengan keempat fitur tersebut. Sementara itu, fitur lainnya memiliki korelasi negatif sehingga fitur tersebut dapat dieliminasi.
