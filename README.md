@@ -1,16 +1,16 @@
 # PREDIKSI WAKTU YANG DIBUTUHKAN UNTUK MENGHANTAR MAKANAN SAMPAI KE TUJUAN
 ## DOMAIN PROYEK
 
-Pengiriman makanan merupakan salah satu bentuk paling umum dari layanan pengiriman. Ini melibatkan pengiriman makanan dari restoran atau toko makanan ke rumah atau lokasi lain sesuai permintaan pelanggan. Perubahan gaya hidup mode­rn, seperti meningkatnya ke­sibukan dan urbanisasi, telah meningkatkan permintaan akan solusi praktis untuk makanan. Layanan pe­ngiriman makanan membantu pelanggan yang tidak memiliki waktu atau ke­mampuan untuk memasak sendiri atau pergi ke­ restoran. Pelanggan semakin me­nuntut pengalaman pengiriman yang lebih baik, te­rmasuk waktu pengiriman yang cepat dan konsisten se­rta kualitas makanan yang terjaga. 
+Pengiriman makanan merupakan salah satu bentuk paling umum dari layanan pengiriman. Ini melibatkan pengiriman makanan dari restoran atau toko makanan ke rumah atau lokasi lain sesuai permintaan pelanggan. Perubahan gaya hidup mode­rn, seperti meningkatnya ke­sibukan dan urbanisasi, telah meningkatkan permintaan akan solusi praktis untuk makanan[1]. Layanan pe­ngiriman makanan membantu pelanggan yang tidak memiliki waktu atau ke­mampuan untuk memasak sendiri atau pergi ke­ restoran. Pelanggan semakin me­nuntut pengalaman pengiriman yang lebih baik, te­rmasuk waktu pengiriman yang cepat dan konsisten se­rta kualitas makanan yang terjaga[2]. 
 
-Dalam hal ini juga Perusahaan pengiriman makanan harus te­rus menyempurnakan operasi me­reka untuk memenuhi harapan pe­langgan. Perusahaan harus memenuhi permintaan pelanggan tanpa kelebihan atau kekurangan persediaan. Di situlah manajemen rantai pasokan masuk. Ini adalah sesuatu yang perlu diperhatikan perusahaan dengan cermat saat mengelola barang. Sebagian besar bisnis masih fokus pada kegiatan internal. maka untuk mempertimbangkan faktor tersebut tersedia pada _dataset_. sehingga dapat di prediksi waktu yang dibutuhkan untuk mengantar makanan ke lokasi tujuan.
+Dalam hal ini juga Perusahaan pengiriman makanan harus te­rus menyempurnakan operasi me­reka untuk memenuhi harapan pe­langgan. Perusahaan harus memenuhi permintaan pelanggan tanpa kelebihan atau kekurangan persediaan. Di situlah manajemen rantai pasokan masuk. Ini adalah sesuatu yang perlu diperhatikan perusahaan dengan cermat saat mengelola barang. Sebagian besar bisnis masih fokus pada kegiatan internal. maka untuk mempertimbangkan faktor tersebut tersedia pada _dataset_. sehingga dapat di prediksi waktu yang dibutuhkan untuk mengantar makanan ke lokasi tujuan[3][4][5].
 
 dalam hal ini untuk mengontrol perubahan faktor waktu tersebut model yang akan digunakan merupakan model regresi. Model regresi adalah salah satu alat statistik yang digunakan untuk memahami hubungan antara satu atau lebih variabel independen (prediktor) dan variabel dependen (variabel yang ingin diprediksi). Dalam model regresi, variabel independen digunakan untuk memprediksi atau menjelaskan nilai variabel dependen.
 
 
 ## BUSINESS UNDERSTANDING
 
-Peningkatan model prediksi waktu yang diperlukan untuk mengantar makanan memiliki potensi dampak atau manfaat berupa menjadi salah satu alat bantu dalam pengambilan keputusan oleh calon penerima makanan. Contoh potensi manfaat dari hasil prediksi waktu yang dibutuhkan untuk mengantar makanan yang akurat adalah membantu pembeli dan penjual untuk memudahkan pembelian makanan tanpa harus ke restoran.
+Peningkatan model prediksi waktu yang diperlukan untuk mengantar makanan memiliki potensi dampak atau manfaat berupa menjadi salah satu alat bantu dalam pengambilan keputusan oleh calon penerima makanan[6]. Contoh potensi manfaat dari hasil prediksi waktu yang dibutuhkan untuk mengantar makanan yang akurat adalah membantu pembeli dan penjual untuk memudahkan pembelian makanan tanpa harus ke restoran.
 
 ## PROBLEM STATEMENTS
 * Berdasarkan hasil riset _dataset_, komponen apa yang mempengaruhi prediksi waktu yang dibutuhkan unyuk mengantar makanan?
@@ -32,6 +32,7 @@ Peningkatan model prediksi waktu yang diperlukan untuk mengantar makanan memilik
 * Dataset terdiri dari 45.593 records dengan 11 buah fitur yang diukur.
 * Dataset terdiri dari 4 data kategori dan 7 data numerik.
 * Dataset memiliki missing value sejumlah 0 records.
+  
 ## VARIABEL-VARIABEL PADA DATASET SEBAGAI BERIKUT
 * ID                         : Merupakan serangkaian huruf yang merupakan tanda pengenal seseorang.
 * Delivery_person_ID         : Merupakan identifikasi unik pengirim produk dalam sebuah sistem.
@@ -41,12 +42,14 @@ Peningkatan model prediksi waktu yang diperlukan untuk mengantar makanan memilik
 Restaurant_longitude        : Koordinat geografis Restaurant yang digunakan untuk menunjukkan posisi suatu titik dari arah utara ke selatan yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
 * Delivery_location_Latitude  : Koordinat geografis lokasi pengiriman yang digunakan untuk menunjukkan posisi suatu titik dari arah timur ke barat yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
 * Delivery_location_Latitude  : Koordinat geografis lokasi pengirimanyang digunakan untuk menunjukkan posisi suatu titik dari arah utara ke selatan yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
+  
 * Type_of_order               : Tipe produk yang dikirim
 * Type_of_vehicle             : Tipe kendaraan roda dua yang digunakan
 * Time_Taken(min)             : Lamanya waktu pengiriman            
 
 Analisis Univariat merupakan bentuk analisis data yang hanya merepresentasikan informasi yang terdapat pada satu variabel. Jenis visualisasi ini umumnya digunakan untuk memberikan gambaran terkait distribusi sebuah variabel dalam suatu dataset. Sedangkan, Analisis Multivariat tmerupakan jenis analisis data yang terdapat dalam lebih dari dua variabel. Jenis visualisasi ini digunakan untuk merepresentasikan hubungan dan pola yang terdapat dalam multidimensional data.
-Selain melalui analisis, dilakukan juga Visualisasi Data. Memvisualisasikan data memberikan wawasan mendalam tentang perilaku berbagai fitur-fitur yang tersedia dalam dataset. Teknik visualisasi yang digunakan pada pembuatan model proyek ini adalah dengan menggunakan catplot yang digunakan untuk memplot distribusi data pada data kategori, pairplot yang digunakan untuk melakukan hubungan antar fitur dalam dataset, dan heatmap yang menampilkan korelasi antar fitur yang ada dalam dataset dalam bentuk matriks.
+
+Selain melalui analisis, dilakukan juga Visualisasi Data. Memvisualisasikan data memberikan wawasan mendalam tentang perilaku berbagai fitur-fitur yang tersedia dalam dataset[6][7]. Teknik visualisasi yang digunakan pada pembuatan model proyek ini adalah dengan menggunakan catplot yang digunakan untuk memplot distribusi data pada data kategori, pairplot yang digunakan untuk melakukan hubungan antar fitur dalam dataset, dan heatmap yang menampilkan korelasi antar fitur yang ada dalam dataset dalam bentuk matriks.
 
 Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan EDA Analisis Univariat dan Gambar 2 merupakan EDA Analisis Multivariat.
 
@@ -83,9 +86,10 @@ Pada fitur 'data kategorik', rata-rata 'Time_taken(min)' cenderung bervariasi.
 Nilai 'Time_taken(min)' terhadap ID dan Delivery_person_ID memiliki rentang variasi 10 - 50. 
 Nilai 'Time_taken(min)' terhadap Type_of_vehicle berada pada nilai 20-30 sedangkan Nilai 'Time_taken(min)' terhadap Type_of_order berada pada nilai 25. 
 Kesimpulan akhir, fitur kategori 'Type_of_vehicle' memiliki pengaruh terhadap fitur numerik 'Time_taken(min)'.
-Pada Gambar 2b, dengan menggunakan fungsi pairplot dari library seaborn, tampak terlihat relasi pasangan dalam dataset. Dari gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot, terlihat bahwa 'Delivery_person_Age' memiliki korelasi yang rendah dengan fitur 'Time_taken(min)'. Sedangkan kedua fitur lainnya terlihat memiliki korelasi yang lebih rendah karena sebarannya tidak membentuk pola.
+Pada Gambar 2b, dengan menggunakan fungsi pairplot dari library seaborn, serta tampak terlihat relasi pasangan dalam dataset. Dari gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot, terlihat bahwa 'Delivery_person_Age' memiliki korelasi yang rendah dengan fitur 'Time_taken(min)'. Sedangkan kedua fitur lainnya terlihat memiliki korelasi yang lebih rendah karena sebarannya tidak membentuk pola.
 
 Terakhir, Gambar 2c merupakan Correlation Matrix menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur 'Delivery_person_Age' memiliki skor korelasi yang sebesar (0.28) dengan fitur target 'Time_taken(min)'. Artinya, fitur 'Time_taken(min)' berkorelasi cukup rendah dengan keempat fitur tersebut. Sementara itu, fitur lainnya memiliki korelasi negatif sehingga fitur tersebut dapat dieliminasi.
+
 ## Data Preparation
 Pada proses *Data Preparation* dilakukan kegiatan seperti *Data Gathering*, *Data Assessing*, dan *Data Cleaning*.
 Pada proses *Data Gathering*, data diimpor sedemikian rupa agar bisa dibaca dengan baik menggunakan *datafram*e Pandas.
@@ -111,6 +115,7 @@ Dengan menggunakan metode IQR, dapat ditentukan *outlier* melalui suatu nilai ba
 Semua proses ini diperlukan dalam rangka membuat model yang baik. 
 
 Untuk mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari “n-dimensional space” ke dalam sistem berkoordinat baru dengan dimensi m, di mana m lebih kecil dari n. Pada proyek ini, fitur 'Delivery_person_Age', 'Restaurant_latitude', 'Delivery_location_latitude' divisualisasikan untuk melihat hubungan di antara fitur-fitur tersebut. seperti yang terlihat pada Gambar 3 berikut.
+
 ![image](https://github.com/titispajarningsih/prediksi-waktu-yang-dibutuhkan-untuk-antar-makanan-ke-lokasi-tujuan/assets/145205021/f0788c20-c3e0-401a-888e-3392c85e60e0)
 ##### Gambar 3 Visualisasi Hubungan antar Fitur sebelum Reduksi PCA
 Berdasarkan Gambar 3 dapat diketahui yang memiliki hubungan antar fitur hanya dua yaitu 'Restaurant_latitude', 'Delivery_location_latitude'. Selanjutnya, 2 fitur ini dapat direduksi dengan PCA. Sebelum itu, cek proporsi informasi dari kedua komponen PCs tadi.
@@ -148,7 +153,7 @@ Kelemahan dari model regresi adalah karena hasil ramalan dari analisis regresi m
 
 Pada proyek yang dikerjakan, algoritma regresi yang coba dibandingkan adalah regresi linear, regresi ridge, *random forest regressor*, dan *random forest regressor* dengan hyperparamter tuning. Regresi linear adalah teknik analisis data yang memprediksi nilai data yang tidak diketahui dengan menggunakan nilai data lain yang terkait dan diketahui dimana secara matematis dimodelkan sebagai persamaan linier, regresi ridge merupakan metode estimasi koefisien regresi yang diperoleh melalui penambahan konstanta bias c, dan random forest adalah suatu algoritma yang digunakan pada klasifikasi data dalam jumlah yang besar dimana teknik klasifikasi *random forest* dilakukan melalui penggabungan pohon dengan melakukan training pada sampel data yang dimiliki.
 
-Untuk meningkatkan model, dilakukan *hyperparamter tuning*. Adapun paramater yang di-tuning antara lain n_estimators', 'max_depth', 'min_samples_split', dan 'min_samples_leaf. Untuk memudahkan proses *tuning* digunakan GridSearchCV. GridSearchCV itu sendiri merupakan bagian dari modul scikit-learn yang dapat digunakan untuk mendapatkan nilai *hyperparameter* secara otomatis. Grid Search adalah metode yang digunakan untuk mencari parameter yang paling tepat untuk meningkatkan performa model dengan mencoba seluruh kombinasi *hyperparameter* yang diberikan.
+Untuk meningkatkan model, maka dilakukan *hyperparamter tuning*. Adapun paramater yang di-tuning antara lain n_estimators', 'max_depth', 'min_samples_split', dan 'min_samples_leaf. Untuk memudahkan proses *tuning* digunakan GridSearchCV. GridSearchCV itu sendiri merupakan bagian dari modul scikit-learn yang dapat digunakan untuk mendapatkan nilai *hyperparameter* secara otomatis. Grid Search adalah metode yang digunakan untuk mencari parameter yang paling tepat untuk meningkatkan performa model dengan mencoba seluruh kombinasi *hyperparameter* yang diberikan.
 
 Berikut adalah nilai parameter *tuning*
 ```
@@ -187,7 +192,7 @@ Berikut merupakan penjelasan kegunaan dari masing-masing metrik yang digunakan:
 - MSE menghitung rata-rata dari selisih kuadrat antara nilai prediksi dan nilai aktual. Semakin kecil nilai MSE, semakin baik kualitas model tersebut.
 - R<sup>2</sup> digunakan untuk menilai seberapa besar pengaruh variabel independen tertentu terhadap variabel dependen
 
-Tabel 1 berikut merupakan perbandingan 4 buah model yang coba dibandingkan
+Tabel 1 berikut merupakan perbandingan 4 buah model yang coba dibandingkan.
 
 |     |Model 1|Model 2|Model 3|Model 4|
 |---|---|---|---|---|
@@ -208,7 +213,7 @@ Secara lebih jauh perbandingan Model 1, 2, 3, dan 4 bisa dilihat pada Gambar 4 b
 
 Berdasarkan Gambar 4 dapat terlihat bahwa nilai error train dan test dari Model 3 (RF1) dan Model 4 (RF2) jauh lebih baik dibandingkan model lainnya.
 
-Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rumah dari 4 buah model yang dibuat. Tabel 2 berikut merupakan hasil dari evaluasi model yang telah dibuat.
+Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rumah dari 4 buah model yang dibuat. Tabel 2 juga merupakan hasil dari evaluasi model yang telah dibuat.
 
 |     |y_true|prediksi_LR|prediksi_RR|prediksi_RF1|prediksi_RF2|
 |---|---|---|---|---|---|
@@ -217,6 +222,27 @@ Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rum
 Tabel 2. Perbandingan Model
 
 
-Berdasarkan hasil evaluasi, terlihat bahwa prediksi waktu pengiriman dengan *Random Forest* (RF), baik RF1 (tanpa tuning) ataupun RF2 (dengan tuning) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 22 dan nilai RF1 dan RF2 masing-masing yaitu 19.7 dan 20.6. Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi prediksi waktu pengiriman dengan cukup baik dengan menggunakan *Random Forest Regressor*.
+Berdasarkan hasil evaluasi, maka terlihat bahwa prediksi waktu pengiriman dengan *Random Forest* (RF), baik RF1 (tanpa tuning) ataupun RF2 (dengan tuning) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 22 dan nilai RF1 dan RF2 masing-masing yaitu 19.7 dan 20.6. Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi prediksi waktu pengiriman dengan cukup baik dengan menggunakan *Random Forest Regressor*.
+
+# REFERENSI
+[1] https://www.parcel2go.com/shipping-advice
+
+[2] https://www.parcel2go.com/content-hub/everything-you-need-to-know-about-sending-a-parcel
+
+[3] https://www.parcel2go.com/services/next-day-delivery
+
+[4] https://www.parcel2go.com/content-hub/how-to-send-a-parcel
+
+[5] https://www.parcel2go.com/services/send-a-parcel
+
+[6] https://www.general-index.com/pages/data-delivery
+
+[7] https://www.tickdata.com/data-delivery-overview/
+
+[8] https://www.promptcloud.com/blog/data-delivery-formats-pros-cons/
+
+[9] https://docs.oracle.com/en/cloud/saas/data-cloud/data-cloud-help-center/IntegratingBlueKaiPlatform/data_delivery.html 
+
+[10] https://www.enformion.com/data-delivery-options/
 
 
